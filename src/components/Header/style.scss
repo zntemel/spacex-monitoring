@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  color: #2A2F36;
+  .logo { 
+      font-weight: 700;
+      h1 {
+        margin: 0;
+        font-size: 40px;
+      }
+    }
+  .menu {
+    .menu-item {
+      margin-left: 20px;
+      text-decoration: none;
+      line-height: 18px;
+      color: #202224;
+      font-weight: 500;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+    }
+  }
+}
