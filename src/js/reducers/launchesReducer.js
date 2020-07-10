@@ -2,7 +2,7 @@ import {
   REQUESTED_LAUNCHES,
   REQUESTED_LAUNCHES_SUCCEEDED,
   REQUESTED_LAUNCHES_FAILED,
-} from '../constant/index';
+} from "../constant/index";
 
 const initialState = {
   data: [],

@@ -1,0 +1,34 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .filter-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .status-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #4c51bf;
+    height: 38px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu Mono", sans-serif;
+    min-width: 240px;
+    input {
+      min-width: 50px;
+      height: 20px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+  
+  .disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
