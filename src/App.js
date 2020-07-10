@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
-import Layout from './containers/Layout';
+import React, { Component } from "react";
+import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import Layout from "./containers/Layout";
+import Launches from "./containers/Launches";
 
-import './App.scss';
+import "./App.scss";
 
 class App extends Component {
   render() {
@@ -11,8 +12,10 @@ class App extends Component {
         <Router>
           <Layout>
             <Switch>
-              <Route exact path="/" component={'Launches'} />
-              <Route component={() => <div className="error">Page Not built :(</div>} />
+              <Route exact path="/launches" component={Launches} />
+              <Route
+                component={() => <div className="error">Page Not built :(</div>}
+              />
             </Switch>
           </Layout>
         </Router>

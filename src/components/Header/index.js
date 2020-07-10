@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './style.scss';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./style.scss";
 
 class Header extends Component {
   render() {
@@ -10,7 +10,9 @@ class Header extends Component {
           <h1>SpaceX</h1>
         </div>
         <div className="menu">
-          <Link className="menu-item" to="/launches">Launches</Link>
+          <Link className="menu-item" to="/launches">
+            Launches
+          </Link>
         </div>
       </div>
     );
