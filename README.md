@@ -20,13 +20,13 @@ All project data fetched from the SpaceX API endpoints.
 
   ```sh
   git clone git@github.com:zntemel/spacex-monitoring.git
-  cd spacex
+  cd spacex-monitoring
    ```
 In the project directory, you can run:
 
  ```sh 
- npm install 
- npm start 
+ yarn install 
+ yarn start 
   ```
 
 Runs the app in the development mode.<br>
@@ -42,7 +42,7 @@ Runs the app in the development mode.<br>
 - [Moment](https://momentjs.com/) library is used as a CSS extension language.
 - [Eslint](https://eslint.org/) is used for consistent code base.
 - Prop Types library is used.
-- Ferch API is used as a HTTP client.
+- Fetch API is used as a HTTP client.
 - No framework is used as UI framework just HTML5 is used .
 - Node version ```14.5.0 ``` is used.
 
