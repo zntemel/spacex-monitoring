@@ -14,7 +14,24 @@ class Launches extends Component {
 
   ListLaunchesData = () => {
     return (
-      'LaunchesData'
+      <>
+        {this.props.launches.data.length === 0 && "There is no launch."}
+        {this.props.launches.data.map((launchItem, index) => (
+          <Card
+            img={launchItem.links.patch.small}
+            title={launchItem.name}
+            smallTitle={moment(launchItem.event_date_utc).format(
+              "DD-MM-YYYY hh:mm"
+            )}
+            description={launchItem.details}
+            url={launchItem.links.article}
+            success={launchItem.success}
+            failures={launchItem.failures}
+            details="Article"
+            key={index}
+          />
+        ))}
+      </>
     );
   };
 
