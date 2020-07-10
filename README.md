@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## SpaceX Web Application
 
-## Available Scripts
+A simple application for launches data for SpaceX.
+ 
+## Getting Started
 
+
+The app includes one pages:
+
+- Launches page consists filter area, launches' photo, title, launch date, and some related information. 
+- In the filter area, you can filter launches data according to date, name, and success status of launch.
+Each filter function works independently. (example: you cannot filter launches according to name and date together) 
+
+
+All project data fetched from the SpaceX API endpoints.
+
+
+## Installing
+
+
+  ```sh
+  git clone git@github.com:zntemel/spacex-monitoring.git
+  cd spacex
+   ```
 In the project directory, you can run:
 
-### `yarn start`
+ ```sh 
+ npm install 
+ npm start 
+  ```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.<br>
+[http://localhost:3000](http://localhost:3000) will directly open to view it in the browser.<br>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Architecture
 
-### `yarn test`
+- This project was created with [Create React App](https://github.com/facebookincubator/create-react-app).
+- [Redux](https://redux.js.org/) is used as a state container.
+- [Redux-Saga](https://redux.js.org/) library is used as a Redux middleware.
+- [React Router](https://reacttraining.com/react-router/) is used for routing.
+- [Sass](https://sass-lang.com/) is used as a CSS extension language.
+- [Moment](https://momentjs.com/) library is used as a CSS extension language.
+- [Eslint](https://eslint.org/) is used for consistent code base.
+- Prop Types library is used.
+- Ferch API is used as a HTTP client.
+- No framework is used as UI framework just HTML5 is used .
+- Node version ```14.5.0 ``` is used.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Something Missing?
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- There is no test in the application
+- The app is not responsive.
+- Please contact me, I am open to any feedback.
