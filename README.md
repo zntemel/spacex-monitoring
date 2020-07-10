@@ -1,6 +1,6 @@
 ## SpaceX Web Application
 
-A simple application for launches data for SpaceX.
+A simple application for launches data for SpaceX. This application is deployed to Heroku. Please visit [live](https://sleepy-hopper-7c151b.netlify.app/) website.
  
 ## Getting Started
 
