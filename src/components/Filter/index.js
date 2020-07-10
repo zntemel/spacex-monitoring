@@ -51,7 +51,7 @@ const Filter = (props) => {
           value={endDate}
           onChange={(event) => onChange("endDate", event)}
         />
-        <button type="button" id="filter-button" className={isButtonDisabled && 'disabled'} onClick={filterLaunchesByDate} disabled={isButtonDisabled}>
+        <button type="button" id="filter-button" className={isButtonDisabled ? 'disabled' : ''} onClick={filterLaunchesByDate} disabled={isButtonDisabled}>
           Filter By Date
         </button>
       </div>
@@ -67,7 +67,10 @@ const Filter = (props) => {
 export default Filter;
 
 Filter.propTypes = {
-  successStatus: PropTypes.bool,
+  successStatus: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
   onChange: PropTypes.func,
   startDate: PropTypes.string,
   endDate: PropTypes.string,

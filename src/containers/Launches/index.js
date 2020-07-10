@@ -70,12 +70,14 @@ class Launches extends Component {
   filterLaunchesByDate = () => {
     const { startDate, endDate } = this.state;
 
-    let updatedLaunches = this.state.launches.filter((launch) => {
+    let updatedLaunches = this.state.launches.filter(function(launch) {
       if (
         launch.date_unix >= moment(startDate, "YYYY-MM-DD").unix() &&
         launch.date_unix <= moment(endDate, "YYYY-MM-DD").unix()
       ) {
         return launch;
+      }else {
+        return false
       }
     });
 
